@@ -61,7 +61,6 @@ button {
   margin-top: 0.8rem;
   color: var(--error-color);
   font-size: 1.3rem;
-  display: none;
 }
 
 .error-border {
@@ -72,6 +71,55 @@ button {
   position: absolute;
   right: 6.1rem;
   top: 1.2rem;
-  display: none;
+}
+
+/* Desktops */
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .input {
+    width: 44.5rem;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    padding-right: 14rem;
+  }
+
+  button {
+    width: 10rem;
+    height: 100%;
+  }
+
+  .error-message {
+    margin-top: 0.4rem;
+    position: absolute;
+  }
+
+  .icon-error {
+    top: 1.6rem;
+    right: 11rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .input {
+    width: 44.5rem;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    padding-right: 14rem;
+  }
+
+  button {
+    width: 10rem;
+    height: 100%;
+  }
+
+  .error-message {
+    margin-top: 0.4rem;
+    position: absolute;
+  }
+
+  .icon-error {
+    top: 1.6rem;
+    right: 11rem;
+  }
 }
 </style>
