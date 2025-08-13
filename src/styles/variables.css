@@ -1,0 +1,15 @@
+:root {
+  --background-color: #fafafa;
+  --input-text-color: #423a3a;
+  --span-title-color: #423a3a;
+  --text-color: #ce9898;
+  --error-color: #f96464;
+  --gradient-background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+
+  --large-font-size: 4rem;
+  --small-font-size: 1.4rem;
+
+  --large-line-height: 4.2rem;
+  --medium-line-height: 2.8rem;
+  --small-line-height: 2.2rem;
+}
