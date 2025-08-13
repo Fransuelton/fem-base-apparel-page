@@ -19,4 +19,30 @@
   width: 10rem;
   height: 2.1rem;
 }
+
+/* Desktops */
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .header {
+    padding: 6.4rem 0 0 16.5rem;
+    width: 40%;
+    position: absolute;
+  }
+  .header .logo {
+    width: 15.8rem;
+    height: 3.3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header {
+    padding: 6.4rem 0 0 16.5rem;
+    width: 40%;
+    position: absolute;
+  }
+  .header .logo {
+    width: 15.8rem;
+    height: 3.3rem;
+  }
+}
 </style>
