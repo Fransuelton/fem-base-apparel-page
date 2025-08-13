@@ -3,8 +3,8 @@ import { Header, Input } from "./components/index.js";
 </script>
 
 <template>
+  <Header />
   <section>
-    <Header />
     <picture>
       <source
         srcset="./assets/images/hero-desktop.jpg"
@@ -19,14 +19,18 @@ import { Header, Input } from "./components/index.js";
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
+      <form>
+        <Input placeholder="Email Address" />
+      </form>
     </div>
-    <form>
-      <Input placeholder="Email Address" />
-    </form>
   </section>
 </template>
 
 <style scoped>
+section {
+  display: flex;
+  flex-direction: column;
+}
 picture img {
   width: 100%;
 }
@@ -36,6 +40,7 @@ picture img {
   flex-direction: column;
   gap: 1.6rem;
   margin: 6.4rem 3.2rem 3.2rem 3.2rem;
+  text-align: center;
 }
 
 .info-wrapper .title {
@@ -43,7 +48,6 @@ picture img {
   font-size: var(--large-font-size);
   line-height: var(--large-line-height);
   letter-spacing: 1rem;
-  text-align: center;
   color: var(--text-color);
 }
 
@@ -56,7 +60,6 @@ picture img {
   font-size: var(--small-font-size);
   line-height: var(--small-line-height);
   color: var(--text-color);
-  text-align: center;
   font-weight: 400;
 }
 
@@ -65,5 +68,71 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Desktops */
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  section {
+    flex-direction: row-reverse;
+  }
+
+  picture img {
+    height: 100%;
+  }
+
+  .info-wrapper {
+    gap: 3.2rem;
+    text-align: left;
+    width: 44.5rem;
+    margin: 27.2rem 16.2rem 16.5rem;
+  }
+
+  .info-wrapper .title {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: 1.7rem;
+  }
+
+  .info-wrapper .description {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  section {
+    flex-direction: row-reverse;
+  }
+
+  picture img {
+    height: 100%;
+  }
+
+  .info-wrapper {
+    gap: 3.2rem;
+    text-align: left;
+    width: 44.5rem;
+    margin: 27.2rem 16.2rem 16.5rem;
+  }
+
+  .info-wrapper .title {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: 1.7rem;
+  }
+
+  .info-wrapper .description {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
 }
 </style>
