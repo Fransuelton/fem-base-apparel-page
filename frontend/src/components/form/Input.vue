@@ -12,7 +12,7 @@ const handleSubmit = async () => {
   success.value = false;
 
   try {
-    const res = await fetch("http://localhost:3000/subscribe", {
+    const res = await fetch("https://fem-base-apparel-page-backend.onrender.com/subscribe", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: email.value }),
