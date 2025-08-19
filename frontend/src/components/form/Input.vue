@@ -107,6 +107,11 @@ button {
   right: -0.8rem;
   height: 4.8rem;
   width: 6.4rem;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: var(--gradient-hover-background);
 }
 
 .error-message {

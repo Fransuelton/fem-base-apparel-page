@@ -5,6 +5,7 @@
   --text-color: #ce9898;
   --error-color: #f96464;
   --gradient-background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  --gradient-hover-background: linear-gradient(135deg, #f8bfbf 100%, #ee8b8b 100%);
 
   --large-font-size: 4rem;
   --small-font-size: 1.4rem;
