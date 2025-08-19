@@ -3,6 +3,7 @@ import { Header, Input } from "./components/index.js";
 </script>
 
 <template>
+  <div>
   <Header />
   <section>
     <picture>
@@ -19,11 +20,10 @@ import { Header, Input } from "./components/index.js";
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
-      <form>
         <Input placeholder="Email Address" />
-      </form>
     </div>
   </section>
+  </div>
 </template>
 
 <style scoped>
@@ -63,13 +63,6 @@ picture img {
   font-weight: 400;
 }
 
-form {
-  margin-bottom: 9.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Desktops */
 
 @media (min-width: 1200px) and (max-width: 1919px) {
@@ -98,10 +91,6 @@ form {
     font-size: 1.6rem;
     line-height: 2.8rem;
   }
-
-  form {
-    margin-bottom: 0;
-  }
 }
 
 @media (min-width: 1920px) {
@@ -129,10 +118,6 @@ form {
   .info-wrapper .description {
     font-size: 1.6rem;
     line-height: 2.8rem;
-  }
-
-  form {
-    margin-bottom: 0;
   }
 }
 </style>
